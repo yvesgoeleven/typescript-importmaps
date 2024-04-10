@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script type="importmap">
+        {
+            "imports": {
+                "@constants" : "/dist/constants.js",
+                "@helloWorld" : "/dist/helloWorld.js"
+            }
+        }
+        </script>
+        <script type="module">
+            import { HelloWorld } from '@helloWorld'
+            customElements.define("hello-world", HelloWorld);
+        </script>
+    </head>
+    <body>
+        <hello-world></hello-world>
+    </body>
+</html>
